@@ -33,8 +33,12 @@ body{
     padding: 10px 20px;
 }
 
-.col-sidebar img{
-    width: 40px;
+#logo{
+    width: 50px;
+}
+
+.navigation img{
+    width: 30px;
 
 }
 
@@ -71,7 +75,12 @@ a{
     overflow: auto;
 }
 
-
+.sidebar-mobile{
+    display: none;
+    width: 30px;
+    height: 100%;
+    background-color: black;
+}
 
 
 
@@ -84,4 +93,31 @@ a{
     width: 100%;
     background-color: #282828;
     height: 100px;
+}
+
+
+
+
+
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^ VERSIONE MOBILE ^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+
+@media screen and (max-width:480px) {
+
+    .col-sidebar{
+        display: none;
+    }
+   
+    
+    .sidebar-mobile{
+        display: block;
+    }
+    .col-sidebar{
+        display: none;
+    }
+
+    .col-main{
+        width: calc(100% - 30px);
+    }
 }
