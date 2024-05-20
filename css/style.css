@@ -4,7 +4,14 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: Montserrat;
+    color: #61646a;
+}
 
+/* ********************************
+****** CONTENITORE SUPERIORE ******
+********************************* */
 
 .container{
     /* DEBUG */
@@ -14,23 +21,43 @@
     display: flex;
 }
 
+
+/* /////////////// SIDEBAR /////////////// */
+
+
 .col-sidebar{
     /* DEGUB */
-    background-color: rgb(152, 95, 26);
+    background-color: black;
     width: 250px;
     height: calc(100vh - 100px);
 }
 
+.col-sidebar img{
+    width: 40px;
+
+}
+
+
+
 .col-main{
     /* DEBUG */
-    background-color: rgb(171, 124, 214);
+    background-color: #141922;
     height: calc(100vh - 100px);
     width: calc(100% - 250px);
     overflow: auto;
 }
+
+
+
+
+
+
+/* ********************************
+****** CONTENITORE PLAYER *********
+********************************* */
 .player{
     /* DEBUG */
     width: 100%;
-    background-color: rgb(37, 6, 6);
+    background-color: #282828;
     height: 100px;
 }
