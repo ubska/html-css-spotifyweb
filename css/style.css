@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container{
+    /* DEBUG */
+    background-color: aquamarine;
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+}
+
+.col-sidebar{
+    /* DEGUB */
+    background-color: rgb(152, 95, 26);
+    width: 250px;
+    height: calc(100vh - 100px);
+}
+
+.col-main{
+    /* DEBUG */
+    background-color: rgb(171, 124, 214);
+    height: calc(100vh - 100px);
+    width: calc(100% - 250px);
+    overflow: auto;
+}
+.player{
+    /* DEBUG */
+    width: 100%;
+    background-color: rgb(37, 6, 6);
+    height: 100px;
+}
