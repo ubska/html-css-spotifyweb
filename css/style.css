@@ -54,16 +54,18 @@ ul li {
 }
 a{
     text-decoration: none;
+    color: #61646a;
+    
 }
 
-.navigation ul li{
+/* .navigation ul li{
     /* padding: 10px 20px; */
-}
 
-.scroll{
+
+/* .scroll{
     height: 100px;
     overflow: auto;
-}
+} */
 
 /* //////////////top main container//////////////// */
 .col-main{
@@ -103,6 +105,15 @@ a{
     border-radius: 30px;
     border: white 1px solid;
     padding: 10px 20px;
+}
+
+.main-container nav ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-top: 20px;
+    height: 100px;
 }
 
 /* ********************************
@@ -145,3 +156,14 @@ a{
         width: calc(100% - 30px);
     }
 }
+
+
+@media screen and (max-height:500px) {
+
+    .scroll{
+        height: 100px;
+        overflow: scroll;
+    }
+    
+}
+
