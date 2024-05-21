@@ -58,14 +58,6 @@ a{
     
 }
 
-/* .navigation ul li{
-    /* padding: 10px 20px; */
-
-
-/* .scroll{
-    height: 100px;
-    overflow: auto;
-} */
 
 /* //////////////top main container//////////////// */
 .col-main{
@@ -73,7 +65,7 @@ a{
     background-color: #141922;
     height: 100vh;
     width: calc(100% - 250px);
-    overflow: auto;
+    overflow-y: scroll;
     position: relative;
     top: 0;
     left: 0;
@@ -119,7 +111,10 @@ a{
 
 .spotify-playlist .card{
     display: flex;
+    gap: 10px;
     text-align: center;
+    margin-bottom: 50px;
+    padding-top: 20px;
 }
 
 .spotify-playlist{
@@ -137,8 +132,28 @@ a{
     font-weight: 500;
 }
 
+.item img{
+    width: 100%;
+}
 
+.mix .card .item{
+    width: 15%;
+}
 
+.card{
+    width: calc(100% / 6) - 10px;
+}
+
+.circular-img{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.artist .card{
+    margin-bottom: 100px;
+}
 
 /* ********************************
 ****** CONTENITORE PLAYER *********
