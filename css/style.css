@@ -22,8 +22,7 @@ body{
 }
 
 
-/* /////////////// SIDEBAR /////////////// */
-
+/* sidebar */
 
 .col-sidebar{
     /* DEGUB */
@@ -66,13 +65,17 @@ a{
     overflow: auto;
 }
 
-
+/* //////////////top main container//////////////// */
 .col-main{
     /* DEBUG */
     background-color: #141922;
-    height: calc(100vh - 100px);
+    height: 100vh;
     width: calc(100% - 250px);
     overflow: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    
 }
 
 .sidebar-mobile{
@@ -82,8 +85,25 @@ a{
     background-color: black;
 }
 
+.top-bar{
+    height: 70px;
+    background-color: #080b12;
+    position: fixed;
+    width: calc(100% - 250px);
+    text-align: right;
+    padding: 25px 10px;
+}
 
+.main-container{
+    padding-top: 80px;
+}
 
+.button{
+    color: white;
+    border-radius: 30px;
+    border: white 1px solid;
+    padding: 10px 20px;
+}
 
 /* ********************************
 ****** CONTENITORE PLAYER *********
@@ -93,6 +113,7 @@ a{
     width: 100%;
     background-color: #282828;
     height: 100px;
+    position: fixed;
 }
 
 
@@ -118,6 +139,9 @@ a{
     }
 
     .col-main{
+        width: calc(100% - 30px);
+    }
+    .top-bar{
         width: calc(100% - 30px);
     }
 }
