@@ -116,6 +116,30 @@ a{
     height: 100px;
 }
 
+
+.spotify-playlist .card{
+    display: flex;
+    text-align: center;
+}
+
+.spotify-playlist{
+    padding: 10px 30px;
+}
+
+.spotify-playlist h2{
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 700;
+}
+
+.item h4{
+    color: white;
+    font-weight: 500;
+}
+
+
+
+
 /* ********************************
 ****** CONTENITORE PLAYER *********
 ********************************* */
